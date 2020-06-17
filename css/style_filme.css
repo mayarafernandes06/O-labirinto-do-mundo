@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    height: 100vh;
+    padding:0;
+    font-family: Arciform;
+    font-size: 16px;
+    background: rgb(255,112,122);
+    background: linear-gradient(298deg, rgba(255,112,122,1) 12%, rgba(255,182,146,1) 43%, rgba(255,237,160,1) 100%);
+}
+
+
+@font-face {
+    font-family: Alcubierre;
+    src: url(../fonte/Alcubierre.otf);
+}
+@font-face {
+    font-family: Arciform;
+    src: url(../fonte/Arciform.otf);
+    
+}
+
+.site {
+    margin: 0;
+    padding: 0;
+}
+
+.corpo_filme {
+    background: url(../img/mountains_filme.png) fixed no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_filme {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#caixa_do_h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 90px;
+    color: black;
+    background-color: rgba(0,0,5,0.8);
+    padding: 60px 28px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin-bottom: 64px;
+    margin-top: 104px;
+    text-shadow: #fff 8px 6px 6px;
+    
+    
+}
+
+.serie h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 76px;
+    border: 2px solid #000;
+    border-radius: 90px;
+    color: black;
+    background-color: rgba(0,0,5,0.8);
+    padding: 60px 28px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin-bottom: 53px;
+    margin-top: 80px;
+    text-shadow: #fff 8px 6px 6px;
+    font-size: 32px;
+}
+
+.sub_titulo h3 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: Alcubierre;
+    color: #000;
+    text-shadow: #fff 3px 5px 5px;
+    margin-top: 36px;
+    margin-bottom: 33px;
+    
+}
+
+.imagens_filme {
+    height: 84px;
+    margin-bottom: 24px; 
+    justify-content: center; 
+    display: flex;
+
+}
+
+.imagem_flower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#trailer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.caixa_dos_atores {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.caixa_atores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 155px;
+    height: 220px;
+    font-size: 20px;
+    color: black;
+    text-align: center; 
+}
+
+.caixa_atores a {
+    height: 140px;
+    width: 135px;
+    background-size: cover;
+    margin: 10px;
+    transition: transform .2s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+}
+
+.caixa_atores a:hover {
+    transform: scale(1.2);
+}
+
+.atores_charlie {
+    background: url(../img/atores/charlie.jpg) no-repeat;
+    
+}
+
+.atores_kristine {
+    background: url(../img/atores/kristine.jpg) no-repeat;
+   
+}
+
+.atores_denny {
+    background: url(../img/atores/denny.jpg) no-repeat;
+    
+}
+
+.atores_jay {
+    background: url(../img/atores/jay.jpg) no-repeat;
+    
+}
+
+/* Atores de Deixe a Neve Cair */
+
+.atores_odeya {
+    background: url(../img/atores/odeya.jpg) no-repeat;
+    
+}
+
+.atores_kiernan {
+    background: url(../img/atores/kiernan.jpg) no-repeat;
+   
+}
+
+.atores_isabela {
+    background: url(../img/atores/isabela.jpg) no-repeat;
+   
+}
+
+.atores_anna {
+    background: url(../img/atores/anna.jpg) no-repeat;
+    
+}
+
+.atores_jacob {
+    background: url(../img/atores/jacob.jpg) no-repeat;
+    
+}
+
+.atores_shameik {
+    background: url(../img/atores/shameik.jpg) no-repeat;
+    
+}
+
+/*Fim dos atores de Deixe a Neve Cair */
+
+/* Atores de Cidades de Papel */
+
+.atores_nat {
+    background: url(../img/atores/nat.jpg) no-repeat;
+    
+}
+
+.atores_cara {
+    background: url(../img/atores/cara.jpg) no-repeat;
+   
+}
+
+.atores_justice {
+    background: url(../img/atores/justice.jpg) no-repeat;
+   
+}
+
+.atores_jaz {
+    background: url(../img/atores/jaz.jpg) no-repeat;
+    
+}
+
+.atores_halston {
+    background: url(../img/atores/halston.jpg) no-repeat;
+    
+}
+
+.atores_austin {
+    background: url(../img/atores/austin.jpg) no-repeat;
+    
+}
+
+/*Fim dos atores de Cidades de Papel */
+
+/* Atores de A culpa é das estrelas */
+
+.atores_shailene {
+    background: url(../img/atores/shailene.jpg) no-repeat;
+    
+}
+
+.atores_ansel {
+    background: url(../img/atores/ansel.jpg) no-repeat;
+   
+}
+
+.atores_nat {
+    background: url(../img/atores/nat.jpg) no-repeat;
+   
+}
+
+.atores_willem {
+    background: url(../img/atores/willem.jpg) no-repeat;
+    
+}
+
+.atores_laura {
+    background: url(../img/atores/laura.jpg) no-repeat;
+    
+}
+
+.atores_sam {
+    background: url(../img/atores/sam.jpg) no-repeat;
+    
+}
+
+/*Fim dos atores de A culpa é das estrelas */
+
+.descricao p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70px;
+    width: 605px;
+    border: 2px solid #000;
+    border-radius: 90px;
+    color: black;
+    background-color: rgba(0,0,5,0.8);
+    padding: 56px 28px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin-bottom: 32px;
+    font-size: 21px;
+    
+}
+
+.descricao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+

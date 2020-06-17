@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    height: 100vh;
+    padding:0;
+    font-family: Arciform;
+    font-size: 16px;
+    background: rgb(255,112,122);
+    background: linear-gradient(298deg, rgba(255,112,122,1) 12%, rgba(255,182,146,1) 43%, rgba(255,237,160,1) 100%);
+}
+
+
+@font-face {
+    font-family: Alcubierre;
+    src: url(../fonte/Alcubierre.otf);
+}
+@font-face {
+    font-family: Arciform;
+    src: url(../fonte/Arciform.otf);
+    
+}
+.site {
+    height: 500%;
+}
+
+.corpo_sonora {
+    background: url(../img/moutains_musica.jpg) fixed no-repeat;
+    height: 112%;
+    background-size: 100% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.corpo_sonora h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Alcubierre;
+    font-size: 46px;
+}
+
+.sub_titulo h3 {
+    height: 146px;
+    width: 625px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    font-family: Alcubierre;
+    color: #000;
+    text-shadow: #000 3px 6px 6px;
+}
+
+.imagens_livro {
+    height: 84px;
+    margin-bottom: 24px; 
+    justify-content: center; 
+    display: flex;
+
+}
+
+.trilha_sonora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 405px;
+    width: 339px;
+}
+
+.trilha_sonora h2 {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    width: 500px; 
+}
+
+.trilha_sonora iframe {
+    width: 800px;
+    height: 355px;
+}
+
+.caixa_sonora {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#caixa_do_h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width: 734px;
+    border: 2px solid #000;
+    border-radius: 90px;
+    color: black;
+    background-color: rgba(0,0,5,0.8);
+    padding: 60px 28px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin-bottom: 32px;
+    text-shadow: #fff 8px 6px 6px;
+    
+    
+}
+
+
+
+

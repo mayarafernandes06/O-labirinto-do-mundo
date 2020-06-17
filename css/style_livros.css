@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    height: 100vh;
+    padding:0;
+    font-family: Arciform;
+    font-size: 16px;
+    background: rgb(255,112,122);
+    background: linear-gradient(298deg, rgba(255,112,122,1) 12%, rgba(255,182,146,1) 43%, rgba(255,237,160,1) 100%);
+}
+
+
+@font-face {
+    font-family: Alcubierre;
+    src: url(../fonte/Alcubierre.otf);
+}
+@font-face {
+    font-family: Arciform;
+    src: url(../fonte/Arciform.otf);
+    
+}
+
+.site {
+    margin: 0;
+    padding: 0;
+}
+
+.corpo_livros {
+    background: url(../img/moutains_livros.jpg) fixed no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.caixa_livros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#caixa_do_h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width: 734px;
+    border: 2px solid #000;
+    border-radius: 90px;
+    color: black;
+    background-color: rgba(0,0,5,0.8);
+    padding: 60px 28px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin-bottom: 64px;
+    margin-top: 104px;
+    text-shadow: #fff 8px 6px 6px;
+    
+    
+}
+
+.imagem_flower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 53px;
+}
+
+.imagem_livro  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s;
+    margin-top: 64px;
+}
+
+.imagem_livro:hover {
+    transform: scale(1.2);
+}
+
+
+#descricao_livro p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 188px;
+    width: 738px;
+    border: 2px solid #000;
+    border-radius: 90px;
+    color: black;
+    background-color: rgba(0,0,5,0.8);
+    padding: 60px 28px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin-top: 39px;
+    font-size: 21px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27px;
+}
+
+#descricao_livro_katherine p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 356px;
+    width: 738px;
+    border: 2px solid #000;
+    border-radius: 90px;
+    color: black;
+    background-color: rgba(0,0,5,0.8);
+    padding: 60px 28px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin-top: 39px;
+    font-size: 21px;
+}
+
+#descricao_livro_neve p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 356px;
+    width: 738px;
+    border: 2px solid #000;
+    border-radius: 90px;
+    color: black;
+    background-color: rgba(0,0,5,0.8);
+    padding: 60px 28px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin-top: 39px;
+    font-size: 21px;
+}
+
+#descricao_livro_papel p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 405px;
+    width: 738px;
+    border: 2px solid #000;
+    border-radius: 90px;
+    color: black;
+    background-color: rgba(0,0,5,0.8);
+    padding: 60px 28px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin-top: 39px;
+    font-size: 21px;
+}
+
+#descricao_livro_will p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 297px;
+    width: 738px;
+    border: 2px solid #000;
+    border-radius: 90px;
+    color: black;
+    background-color: rgba(0,0,5,0.8);
+    padding: 60px 28px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin-top: 39px;
+    font-size: 21px;
+}
+
+#descricao_livro_estrela p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 233px;
+    width: 738px;
+    border: 2px solid #000;
+    border-radius: 90px;
+    color: black;
+    background-color: rgba(0,0,5,0.8);
+    padding: 60px 28px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin-top: 39px;
+    font-size: 21px;
+}
+
+#descricao_livro_tartaruga p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 360px;
+    width: 738px;
+    border: 2px solid #000;
+    border-radius: 90px;
+    color: black;
+    background-color: rgba(0,0,5,0.8);
+    padding: 60px 28px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    margin-top: 39px;
+    font-size: 21px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.down_do_livro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 33px;
+}
+
+.down_do_livro a {
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: #A6A6A6 3px solid;
+    height: 50px;
+    font-size: 16px;
+    width: 226px;
+    font-family: Arciform;
+    background-color: #6467A4;
+    color: white;
+    transition: 0.3s;
+    box-shadow: 0 0 2px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.down_do_livro a:hover {
+    background-color: #404040;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px;
+}

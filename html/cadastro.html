@@ -27,16 +27,16 @@
 
                     </li>
                     <li><a href="trilha_sonora.html">Trilha sonora</a></li>
-                    <li><a href="#">Filme/Série</a></li>
+                    <li><a href="filme.html">Filme/Série</a></li>
                     <li><a href="sobremim.html">Sobre mim</a></li>
                     <li><a href="login.html">Login</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </div>
         </div>
-        <div class="corpo_login">
-            <div class="caixa_login">
-                <div class="login">
+        <div class="corpo_cadastro">
+            <div class="caixa_cadastro">
+                <div class="cadastro">
                     <h1>Cadastro</h1>
 
                     <form class="dados_login" action="livros.html">
@@ -44,13 +44,23 @@
                         <label for="nome">Nome do usúario</label>
                         <input type="text" placeholder="Insira seu nome" id="nome">
 
-                        <label for="email">E-mail</label>
-                        <input type="text" placeholder="Insira seu email" id="email">
+                        <label for="input_email">E-mail</label>
+                        <input type="text" placeholder="Insira seu email" id="input_email" onkeyup="email()">
 
-                        <label for="senhas">Senha</label>
-                        <input type="password" placeholder="Insira sua senha" id="senhas">
+                        <label for="input_senhas">Senha</label>
+                        <input type="password" placeholder="Insira sua senha" id="input_senhas" onkeyup="senha()">
 
-                        <a><button onclick="login()"> Login</button></a>
+                        <label for="input_confirmacao">Confirmação de senha</label>
+                        <input type="password" placeholder="Confirmação de senha" id="input_confirmacao" onkeyup="confirmacao()">
+
+                        <div id="cadastro_button">
+
+                            <button onclick="login()"> Login</button>
+
+                        </div>
+
+                        <div id="resultado"></div><br>
+
                     </form>
                 </div>
             </div>
@@ -58,18 +68,60 @@
 
         <div class="footer">
             <div id="flower_header">
-    
+
                 <img src="../img/flower.svg" style="height: 61px; width: 61px;">
-    
+
             </div>
             <p>Copyright © 2020 O labirinto do mundo</p>
             <p>mayara.santos@bandtec.com.br</p>
-        
+
         </div>
-    
+
     </div>
     </div>
 
 </body>
 
 </html>
+<script>
+
+    function senha() {
+
+        let senha = input_senhas.value;
+
+
+        if (senha.length == 0) {
+            resultado.innerHTML = '';
+        } else if (senha.length < 5) {
+            resultado.innerHTML = `<span style="color: red;"><b>Senha muito fraca!</b></span>`;
+        } else if (senha.length <= 9) {
+            resultado.innerHTML = `<span style="color:#FFA20D;"><b>Senha média!</b></span>`;
+        } else if (senha.length > 9) {
+            resultado.innerHTML = `<span style="color: green;"><b>Senha boa!</b></span>`
+        }
+
+    }
+
+    function confirmacao() {
+
+        let senha = input_senhas.value;
+        let confirmacao = input_confirmacao.value;
+
+        if (confirmacao.length == 0) {
+            resultado.innerHTML = '';
+        } else if (senha == confirmacao) {
+
+            resultado.innerHTML = `<b style="color: black;" >Senhas iguais!</b><img src ="../img/correto.svg" style="height: 21px;width: 21px;margin-left: 6px;">`;
+        }
+        else {
+
+            resultado.innerHTML = `<b style="color: black;" >Senhas diferentes!</b><img src ="../img/problema.svg" style="height: 21px;width: 21px;margin-left: 6px;"> `;
+
+        }
+    }
+
+ 
+
+
+
+</script>

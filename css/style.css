@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    padding:0;
+    font-family: Arciform;
+    font-size: 16px;
+    background: rgb(191,185,174);
+    background: linear-gradient(90deg, rgba(191,185,174,1) 8%, rgba(217,217,217,1) 47%, rgba(166,161,151,1) 100%);
+
+}
+
+@font-face {
+    font-family: Alcubierre;
+    src: url(../fonte/Alcubierre.otf);
+}
+@font-face {
+    font-family: Arciform;
+    src: url(../fonte/Arciform.otf);
+    
+}
+.header {
+    width: 100%;
+    height: 70px;
+    border-bottom: #0D0C0B 4px solid;
+    font-family: Alcubierre;
+    background: rgb(255,112,122);
+    background: linear-gradient(298deg, rgba(255,112,122,1) 12%, rgba(255,182,146,1) 43%, rgba(255,237,160,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+/* Configurações do cabeçalho */
+
+
+.ini {
+    font-weight: bolder;
+}
+
+.header ul {
+    margin-top: 25px;
+} 
+
+.nav ul li {
+    display: inline;
+    padding-left: 20px;
+
+}
+.header a:hover {
+color:   #951C64;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Arciform;
+    
+  }
+
+/* background do ínicio do site */
+.corpo_inicio {
+    background: url(../img/moutains_inicio.png) fixed no-repeat;
+    height: 90vh;
+    background-size: 100% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.caixa_inicio h1{
+    color: white;
+   font-weight: bold;
+   font-size: 38px;
+}
+
+.caixa_inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button_saiba{
+    margin: 15px;
+}
+.button_saiba button {
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: #A6A6A6 3px solid;
+    height: 40px;
+    font-size: 16px;
+    width: 185px;
+    font-family: Arciform;
+    background-color: #737373;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: 0 0 2px;
+    
+}
+
+
+.button_saiba button:hover {
+    background-color: #404040;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px;
+}
+
+.footer {
+    height: 18vh;
+    background-color: #0D0C0B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arciform;
+    align-items: center;
+    
+}
+
+.footer p {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+/* "Sobre" */
+.projeto {
+    color: #EF3B60; 
+}
+
+.titulo {
+    float: left;
+    color:black;
+    margin-top: 10px;
+    font-size: 46px;
+}
+.resto {
+    padding-top: 0px;
+    margin: 0px;
+    height: 650px;
+}
+.resto-menor {
+    margin: 0 auto;
+    width: 80%;
+    color: #232323;
+    min-height: 640px;
+
+}
+.caixa1{
+    width: 47%;
+    background-color: #ffffff;
+    min-height: 360px;
+   
+    border-bottom:  #67360E 4px solid;
+    float: right;
+}
+.h3-livros{
+    padding-left: 40%;
+    padding-top: 0px;
+    font-size: 20px;
+}
+.div-livros{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.caixa2{
+    background-color: #ffffff;
+    min-height: 360px;
+    width: 47%;
+    border-bottom: #67360E 4px solid;
+}
+
+.h3-autores{
+    padding-left: 40%;
+    padding-top: 24px;
+    font-size: 20px;
+}
+
+.div-autores{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.caixa3{
+    margin-top: 30px;
+    background-color: #ffffff;
+    min-height: 170px;
+    width: 100%;
+    border-bottom: #67360E 4px solid;
+}
+
+.h3-contato{
+    padding-left: 45.5%;
+    padding-top: 24px;
+    font-size: 25px;
+}
+
+.div-contato{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+}
+

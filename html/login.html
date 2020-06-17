@@ -27,7 +27,7 @@
 
                     </li>
                     <li><a href="trilha_sonora.html">Trilha sonora</a></li>
-                    <li><a href="#">Filme/Série</a></li>
+                    <li><a href="filme.html">Filme/Série</a></li>
                     <li><a href="sobremim.html">Sobre mim</a></li>
                     <li><a href="login.html">Login</a></li>
                     <li><a href="contato.html">Contato</a></li>
@@ -41,13 +41,20 @@
 
                     <form class="dados_login" action="livros.html">
 
-                        <label for="emails">Usúario</label>
-                        <input type="email" placeholder="Insira seu email" id="emails">
+                        <label for="input_emails">Usúario</label>
+                        <input type="email" placeholder="Insira seu email" id="input_emails" required>
 
-                        <label for="senhas">Senha</label>
-                        <input type="password" placeholder="Insira sua senha" id="senhas">
+                        <label for="input_senhas">Senha</label>
+                        <input type="password" placeholder="Insira sua senha" id="input_senhas" required>
 
-                        <a><button onclick="login()"> Login</button></a>
+                       
+
+                        <div id="login_button">
+
+                            <button onclick="login()"> Login</button> <br>
+
+                        </div>
+                       
                         <a href="cadastro.html" class="fazer_cadastro">Ainda não possui cadastro?</a>
                     </form>
                 </div>
@@ -56,18 +63,24 @@
 
         <div class="footer">
             <div id="flower_header">
-    
+
                 <img src="../img/flower.svg" style="height: 61px; width: 61px;">
-    
+
             </div>
             <p>Copyright © 2020 O labirinto do mundo</p>
             <p>mayara.santos@bandtec.com.br</p>
-        
+
         </div>
-    
+
     </div>
     </div>
 
 </body>
 
 </html>
+<script>
+
+
+  
+
+</script>

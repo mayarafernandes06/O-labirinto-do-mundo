@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+    border: 0;
+    padding:0;
+    font-family: Arciform;
+    font-size: 16px;
+    background: rgb(191,185,174);
+    background: linear-gradient(90deg, rgba(191,185,174,1) 8%, rgba(217,217,217,1) 47%, rgba(166,161,151,1) 100%);
+
+}
+@font-face {
+    font-family: Arciform;
+    src: url(../fonte/Arciform.otf); 
+}
+@font-face {
+        font-family: Alcubierre;
+        src: url(../fonte/Alcubierre.otf);
+}
+.site {
+    height: 100vh;
+}
+
+/* Configurações do Login */
+.corpo_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89%;
+    background: url(../img/mountains.png);
+    
+}
+
+.login {
+    height: 90%;
+    width: 90%;
+}
+.caixa_login {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 347px;
+    width: 347px;
+    border: 2px solid #000;
+    border-radius: 80px 0 80px 0; 
+    color: #fff;
+    background-color: rgba(0,0,5,0.8);
+    padding: 18px 28px;
+    background: rgba(255,255,255,.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    
+    
+}
+    
+.usuario {
+    border-radius: 50%;
+}
+
+.login h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 18px;
+   color: #000;
+   font-family: Alcubierre;
+}
+
+.login label {
+    font-weight: bold;
+    font-family: Alcubierre;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.login input {
+    width: 100%;
+    margin-bottom: 21px;
+    background: transparent;
+    border: 0;
+    border-bottom: black 1px solid;
+    font-family: Arciform;
+    height: 30px;
+    font-size: 16px;
+}
+
+/* Comandos para mudar o placeholder sem alterar o value */
+
+::-webkit-input-placeholder {
+    color: #951C64;
+    font: 12px;
+ }
+ 
+ :-moz-placeholder {
+    color: #951C64;
+    font: 12px;
+ }
+ 
+ ::-moz-placeholder {
+    color: #951C64;  
+    font: 12px;
+ }
+ 
+ :-ms-input-placeholder {  
+    color: #951C64;  
+    font: 12px;
+ }
+
+/* Fim dos comandos */
+
+
+
+.login input:focus {
+    outline: none;
+
+}
+
+#resultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11px;
+    font-size: 17px;
+    height: 21px;
+}
+
+.dados_login a {
+    text-decoration: none;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    text-shadow: #000 3px 6px 6px;
+    font-size: 18px;
+}
+.dados_login a:hover {
+    color: #0F0F0F;
+}
+
+#login_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 39px;
+
+}
+
+.login button {
+    width: 75%;
+    border-radius: 27px;
+    height: 31px;
+    border: none;
+    background-color: #6467A4;
+    color: white;
+    margin-top: 1px;
+    font-family: Alciform;
+}
+
+
+.login button:hover {
+    background-color: #2F2635;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px;
+}
+
+
+
+/* Estilização do cadastro */
+
+.caixa_cadastro {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 492px;
+    width: 347px;
+    border: 2px solid #000;
+    border-radius: 80px 0 80px 0; 
+    color: #fff;
+    background-color: rgba(0,0,5,0.8);
+    padding: 18px 28px;
+    background: rgba(255,255,255,.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    
+    
+}
+
+.corpo_cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89%;
+    background: url(../img/mountains.png);
+    
+}
+
+.cadastro {
+    height: 90%;
+    width: 90%;
+}
+
+.cadastro h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 18px;
+   color: #000;
+   font-family: Alcubierre;
+}
+
+.cadastro label {
+    font-weight: bold;
+    font-family: Alcubierre;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.cadastro input {
+    width: 100%;
+    margin-bottom: 21px;
+    background: transparent;
+    border: 0;
+    border-bottom: black 1px solid;
+    font-family: Arciform;
+    height: 30px;
+    font-size: 16px;
+}
+
+.cadastro input:focus {
+    outline: none;
+
+}
+
+.dados_cadastro a {
+    text-decoration: none;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    text-shadow: #000 3px 6px 6px;
+    font-size: 18px;
+}
+.dados_cadastro a:hover {
+    color: #0F0F0F;
+}
+
+#cadastro_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+
+}
+
+.cadastro button:hover {
+    background-color: #2F2635;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px;
+}
+
+.cadastro button {
+    width: 75%;
+    border-radius: 27px;
+    height: 31px;
+    border: none;
+    background-color: #6467A4;
+    color: white;
+    margin-top: 1px;
+    font-family: Alciform;
+}

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <!--Cabeçalho-->
+    <!-- Início do cabeçalho-->
     <div class="site">
         <div class="header">
             <div id="flower_header">
@@ -27,7 +27,7 @@
 
                     </li>
                     <li><a href="trilha_sonora.html">Trilha sonora</a></li>
-                    <li><a href="#">Filme/Série</a></li>
+                    <li><a href="filme.html">Filme/Série</a></li>
                     <li><a href="sobremim.html">Sobre mim</a></li>
                     <li><a href="login.html">Login</a></li>
                     <li><a href="contato.html">Contato</a></li>
@@ -35,46 +35,112 @@
             </div>
         </div>
 
+        <!--Fim do cabeçalho-->
+
         <div class="corpo_contato">
-            <div class="caixa_contato">
+
+
+            <div class="caixa_contato" id="informacoes">
                 <div class="contato">
 
                     <h1>Entre em contato conosco.</h1>
 
-                    <form>
+                    <!--Início do form (conteúdos que estão dentro da caixa transparente)-->
+                    <div class="informacoes" >
+
                         <label for="nomecompleto">Nome completo:</label>
-                        <input type="text" id="nomecompleto" placeholder="Laura Silva Cardoso" required>
+                        <input type="text" id="nomecompleto" placeholder="Laura Silva Cardoso">
 
                         <label for="email">E-mail:</label>
-                        <input type="email" id="email" placeholder="seuemail@dominio.com" required>
+                        <input type="email" id="email" placeholder="seuemail@dominio.com">
 
                         <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" placeholder="(11) 9123-4567" required>
+                        <input type="tel" id="telefone" placeholder="1191234567">
 
                         <label for="">Mensagem:</label>
                         <textarea id="mensagem" cols="57" rows="8"></textarea>
 
-                        <button onclick="enviar()"> Enviar</button>
-                    </form>
+                        <button  onclick="enviarParaBanco()"> Enviar</button>
+
+                        <!--Mensagens de erros que aparecerem dentro da caixa por causa do array-->
+                        <ul id="mensagemErro"></ul>
+                        <!--Fim das mensagens de erros que aparecerem dentro da caixa por causa do array-->
+
+                        <!--Fim do form (conteúdos que estão dentro da caixa transparente)-->
+
+                    </div>
 
                 </div>
             </div>
         </div>
 
+        <!--ínicio do footer-->
         <div class="footer">
             <div id="flower_header">
-    
+
                 <img src="../img/flower.svg" style="height: 61px; width: 61px;">
-    
+
             </div>
             <p>Copyright © 2020 O labirinto do mundo</p>
             <p>mayara.santos@bandtec.com.br</p>
-        
+            <!--Fim do footer-->
         </div>
-        
+
+    </div>
+
+
     </div>
     </div>
     </div>
 
-   
+
 </body>
+
+</html>
+<script>
+
+
+    function enviarParaBanco() {
+
+       
+        mensagemErro.innerHTML = '';
+
+        var erros = validaContato();
+
+        if (erros.length > 0) {
+            for (var contador = 0; contador < erros.length; contador++) {
+                var erro = erros[contador];
+                var li = document.createElement("li");
+                li.innerHTML = erro;
+                mensagemErro.appendChild(li);
+            }
+        }
+        let info = document.getElementById("informacoes");
+       
+         let espaco = (erros.length * 30) + 579;
+
+         informacoes.style.height = `${espaco}px`;
+
+
+    }
+
+    function validaContato() {
+        var erros = [];
+
+        if (!nomecompleto.value) {
+            erros.push("Preencha com o seu nome!");
+        }
+
+        if (!email.value || (email.value.search("@") == -1)
+            || (email.value.search(".") == -1)
+            || (email.value.search(" ") >= '')) {
+            erros.push("O formato do e-mail é: usuario@dominio.com");
+        }
+
+        if (isNaN(telefone.value) || telefone.value.length > 12 || !telefone.value) {
+            erros.push("Número inválido!")
+        }
+
+        return erros;
+    }
+</script>
