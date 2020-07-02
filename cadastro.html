@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O labirinto do mundo</title>
+    <link rel="stylesheet" href="css/style_login-cadastro.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/livro.svg">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <div class="site">
+        <div class="header">
+            <div id="flower_header">
+                <img src="img/flower.svg" style="height: 61px; width: 61px;">
+
+            </div>
+
+            <h1 class="titulo">O<span class="projeto"> labirinto</span> do mundo</h1>
+
+            <div class="nav">
+                <ul>
+                    <li><a class="ini" href="index.html">Ínicio</a>
+
+                    </li>
+                    <li><a href="trilha_sonora.html">Trilha sonora</a></li>
+                    <li><a href="filme.html">Filme/Série</a></li>
+                    <li><a href="sobremim.html">Sobre mim</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="corpo_cadastro">
+
+            <div class="caixa_cadastro">
+
+                <div class="cadastro">
+
+                    <h1>Cadastro</h1>
+
+                    <form class="dados_cadastro" id="form_cadastro" method="post" onsubmit="return cadastrar()">
+
+                        <label for="nome">Nome do usúario</label>
+                        <input type="text" name="nome" placeholder="Insira seu nome" id="nome" required>
+
+                        <label for="input_email">E-mail</label>
+                        <input type="text" name="login" placeholder="Insira seu email" id="input_email" required>
+
+                        <label for="input_senhas">Senha</label>
+                        <input type="password" name="senha" placeholder="Insira sua senha" id="input_senhas"
+                            onkeyup="senha()" required>
+
+                        <label for="input_confirmacao">Confirmação de senha</label>
+                        <input type="password" placeholder="Confirmação de senha" id="input_confirmacao"
+                            onkeyup="confirmacao()">
+
+                        <div id="cadastro_button">
+
+                            <button id="btn_entrar"> Cadastrar-se</button>
+
+                        </div>
+
+                        <div id="resultado"></div><br>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div id="flower_header">
+
+                <img src="img/flower.svg" style="height: 61px; width: 61px;">
+
+            </div>
+            <p>Copyright © 2020 O labirinto do mundo</p>
+            <p>mayara.santos@bandtec.com.br</p>
+
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    function senha() {
+
+        let senha = input_senhas.value;
+
+
+        if (senha.length == 0) {
+            resultado.innerHTML = '';
+        } else if (senha.length < 5) {
+            resultado.innerHTML = `<span style="color: red;"><b>Senha muito fraca!</b></span>`;
+        } else if (senha.length <= 9) {
+            resultado.innerHTML = `<span style="color:#FFA20D;"><b>Senha média!</b></span>`;
+        } else if (senha.length > 9) {
+            resultado.innerHTML = `<span style="color: green;"><b>Senha boa!</b></span>`
+        }
+
+
+    }
+
+
+    function confirmacao() {
+
+        let senha = input_senhas.value;
+        let confirmacao = input_confirmacao.value;
+
+        if (confirmacao.length == 0) {
+
+            resultado.innerHTML = '';
+        }
+        else if (senha == confirmacao) {
+
+            resultado.innerHTML = `<b style="color: black;" >Senhas iguais!</b><img src ="../img/correto.svg" style="height: 21px;width: 21px;margin-left: 6px;">`;
+        }
+        else {
+
+            resultado.innerHTML = `<b style="color: black;" >Senhas diferentes!</b><img src ="../img/problema.svg" style="height: 21px;width: 21px;margin-left: 6px;"> `;
+        }
+
+    }
+
+    function cadastrar() {
+
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                window.location.href = 'login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+
+            }
+        });
+
+        return false;
+    }
+
+
+
+</script>

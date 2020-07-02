@@ -19,6 +19,7 @@ body {
     background: linear-gradient(298deg, rgba(255,112,122,1) 12%, rgba(255,182,146,1) 43%, rgba(255,237,160,1) 100%);
 }
 
+/*Fontes usadas no site*/
 
 @font-face {
     font-family: Alcubierre;
@@ -30,14 +31,26 @@ body {
     
 }
 
+/*Configurações do site*/
+
 .corpo_sobre {
-    background: url(../img/moutains_sobre.jpg) fixed no-repeat;
+    background: url(../img/background/moutains_sobre.jpg) fixed no-repeat;
     height: 112%;
     background-size: 100% auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*Configurações da caixa_sobre e o conteúdo dentro dela*/
 
 .caixa_sobre {
     display: flex;
@@ -67,26 +80,56 @@ body {
     
 }
 
-.coffee {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 53px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
+/*Imagem da página sobre mim*/
 
 .imagem_perfil {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+/*Configurações dos ícones*/
+
+#coffee {
+    display: flex;
+    justify-content: center;
+    margin-top: 29px;
+}
+
+.facebook_logo {
+    background: url(../img/facebook.svg) no-repeat;
+    
+}
+
+.twitter_logo {
+    background: url(../img/twitter.svg) no-repeat;
+   
+}
+
+.instagram_logo {
+    background: url(../img/instagram.svg) no-repeat;
+    
+}
+
+#caixa_rede_social {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+}
+
+#caixa_rede_social a {
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    margin: 10px;
+}
+
+
+
+
+/*Ajustes da descrição da página sobre mim*/
 
 #descricao_sobre p {
     display: flex;
@@ -112,16 +155,8 @@ body {
     align-items: center;
 }
 
-#coffee {
-    display: flex;
-    justify-content: center;
-    margin-top: 29px;
-}
 
-#caixa_rede_social {
-    display: flex;
-    justify-content: center;
-}
+/*Configurações do botão*/
 
 .inicio {
     display: flex;
@@ -154,30 +189,8 @@ body {
     box-shadow: 0 0 10px;
 }
 
-#caixa_rede_social {
-    height: 80px;
-    width: 100%;
-}
-
-#caixa_rede_social a {
-    height: 60px;
-    width: 60px;
-    background-size: cover;
-    margin: 10px;
-}
 
 
-.facebook_logo {
-    background: url(../img/facebook.svg) no-repeat;
-    
-}
 
-.twitter_logo {
-    background: url(../img/twitter.svg) no-repeat;
-   
-}
 
-.instagram_logo {
-    background: url(../img/instagram.svg) no-repeat;
-    
-}
+

@@ -19,6 +19,7 @@ body {
     background: linear-gradient(298deg, rgba(255,112,122,1) 12%, rgba(255,182,146,1) 43%, rgba(255,237,160,1) 100%);
 }
 
+/*Fontes usadas no site*/
 
 @font-face {
     font-family: Alcubierre;
@@ -30,19 +31,30 @@ body {
     
 }
 
+/*Configurações do site*/
+
 .site {
     margin: 0;
     padding: 0;
 }
 
 .corpo_livros {
-    background: url(../img/moutains_livros.jpg) fixed no-repeat;
+    background: url(../img/background/moutains_livros.jpg) fixed no-repeat;
     background-size: 100% auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*Configurações da caixa_livros e o conteúdo dentro dela*/
 
 
 .caixa_livros {
@@ -73,6 +85,8 @@ body {
     
 }
 
+/*Imagens estilizadas usadas na página livros*/
+
 .imagem_flower {
     display: flex;
     justify-content: center;
@@ -93,6 +107,9 @@ body {
 }
 
 
+
+/*Configurações usadas para fazer a descrição da série/filmes*/
+
 #descricao_livro p {
     display: flex;
     justify-content: center;
@@ -109,13 +126,6 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     margin-top: 39px;
     font-size: 21px;
-}
-
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 27px;
 }
 
 #descricao_livro_katherine p {
@@ -226,13 +236,19 @@ body {
     font-size: 21px;
 }
 
-.container {
+/*Ajustes para os ícones da página livros*/
+
+.icon {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 27px;
 }
+
+
+
+
+/*Configurações usadas para a classe down_do_livro (usada para baixar os livros)*/
 
 .down_do_livro {
     display: flex;

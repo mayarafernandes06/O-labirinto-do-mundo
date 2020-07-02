@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O labirinto do mundo</title>
+    <link rel="stylesheet" href="css/style_login-cadastro.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/livro.svg">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <div class="site">
+        <div class="header">
+            <div id="flower_header">
+                <img src="img/flower.svg" style="height: 61px; width: 61px;">
+
+            </div>
+
+            <h1 class="titulo">O<span class="projeto"> labirinto</span> do mundo</h1>
+
+            <div class="nav">
+                <ul>
+                    <li><a class="ini" href="index.html">Ínicio</a>
+
+                    </li>
+                    <li><a href="trilha_sonora.html">Trilha sonora</a></li>
+                    <li><a href="filme.html">Filme/Série</a></li>
+                    <li><a href="sobremim.html">Sobre mim</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="corpo_login">
+            <div class="caixa_login">
+                <div class="login">
+                    <h1>Login</h1>
+
+                    <form class="dados_login"  id="form_login" method="post" onsubmit="return entrar()">
+
+                        <label  for="input_emails">Usúario</label>
+                        <input name="login"  type="email" placeholder="Insira seu email" id="input_emails" required>
+
+                        <label for="input_senhas">Senha</label>
+                        <input name="senha" type="password" placeholder="Insira sua senha" id="input_senhas" required>
+
+                       
+
+                        <div id="login_button">
+
+                            <button >Login</button> <br>
+
+                        </div>
+                       
+                        <a href="cadastro.html" class="fazer_cadastro">Ainda não possui cadastro?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div id="flower_header">
+
+                <img src="img/flower.svg" style="height: 61px; width: 61px;">
+
+            </div>
+            <p>Copyright © 2020 O labirinto do mundo</p>
+            <p>mayara.santos@bandtec.com.br</p>
+
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+function entrar() {
+       
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+            
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.emailUsuario;
+                    sessionStorage.nome_usuario_meuapp = json.nomeUsuario;
+                    
+                    window.location.href = 'livros.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                response.text().then(texto => {
+                    console.error(texto);
+                   
+                });
+            }
+        });
+
+        return false;
+    }
+
+   
+
+</script>

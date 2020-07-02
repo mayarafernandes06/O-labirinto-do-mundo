@@ -19,6 +19,7 @@ body {
     background: linear-gradient(298deg, rgba(255,112,122,1) 12%, rgba(255,182,146,1) 43%, rgba(255,237,160,1) 100%);
 }
 
+/*Fontes usadas no site*/
 
 @font-face {
     font-family: Alcubierre;
@@ -29,12 +30,15 @@ body {
     src: url(../fonte/Arciform.otf);
     
 }
+
+/*Configurações do site*/
+
 .site {
     height: 500%;
 }
 
 .corpo_sonora {
-    background: url(../img/moutains_musica.jpg) fixed no-repeat;
+    background: url(../img/background/moutains_musica.jpg) fixed no-repeat;
     height: 112%;
     background-size: 100% auto;
     display: flex;
@@ -62,37 +66,7 @@ body {
     text-shadow: #000 3px 6px 6px;
 }
 
-.imagens_livro {
-    height: 84px;
-    margin-bottom: 24px; 
-    justify-content: center; 
-    display: flex;
-
-}
-
-.trilha_sonora {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 405px;
-    width: 339px;
-}
-
-.trilha_sonora h2 {
-    margin-top: 18px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    width: 500px; 
-}
-
-.trilha_sonora iframe {
-    width: 800px;
-    height: 355px;
-}
+/*Configurações da caixa_sonora e o conteúdo dentro dela*/
 
 .caixa_sonora {
     display: flex;
@@ -120,6 +94,51 @@ body {
     
     
 }
+
+/*Ajustes das imagens da página */
+
+.imagens_trilha {
+    height: 84px;
+    margin-bottom: 24px; 
+    justify-content: center; 
+    display: flex;
+
+}
+
+.imagens_trilha img {
+	
+	height: 84px;
+	width: auto;
+	
+}
+
+/*Ajustes feitos para passar a playlist's*/
+
+.trilha_sonora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 405px;
+    width: 339px;
+}
+
+.trilha_sonora h2 {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    width: 500px; 
+}
+
+.trilha_sonora iframe {
+    width: 800px;
+    height: 355px;
+}
+
+
 
 
 

@@ -19,6 +19,8 @@ body {
 
 }
 
+/*Fontes usadas no site*/
+
 @font-face {
     font-family: Alcubierre;
     src: url(../fonte/Alcubierre.otf);
@@ -28,6 +30,9 @@ body {
     src: url(../fonte/Arciform.otf);
     
 }
+
+/* Configurações do cabeçalho */
+
 .header {
     width: 100%;
     height: 70px;
@@ -40,8 +45,17 @@ body {
     justify-content: space-around;
 
 }
-/* Configurações do cabeçalho */
 
+.projeto {
+    color: #EF3B60; 
+}
+
+.titulo {
+    float: left;
+    color:black;
+    margin-top: 10px;
+    font-size: 46px;
+}
 
 .ini {
     font-weight: bolder;
@@ -56,9 +70,11 @@ body {
     padding-left: 20px;
 
 }
+
 .header a:hover {
 color:   #951C64;
 }
+
 .nav a {
     text-decoration: none;
     color: black;
@@ -68,9 +84,9 @@ color:   #951C64;
     
   }
 
-/* background do ínicio do site */
+/* Configurações do site*/
 .corpo_inicio {
-    background: url(../img/moutains_inicio.png) fixed no-repeat;
+    background: url(../img/background/moutains_inicio.png) fixed no-repeat;
     height: 90vh;
     background-size: 100% auto;
     display: flex;
@@ -90,6 +106,8 @@ color:   #951C64;
     justify-content: space-around;
     align-items: center;
 }
+
+/*Configurações do botão */
 
 .button_saiba{
     margin: 15px;
@@ -119,6 +137,8 @@ color:   #951C64;
     box-shadow: 0 0 10px;
 }
 
+/*Configurações do footer(rodapé)*/
+
 .footer {
     height: 18vh;
     background-color: #0D0C0B;
@@ -135,84 +155,5 @@ color:   #951C64;
     font-size: 17px;
     line-height: 24px;
     font-weight: bold;
-}
-
-/* "Sobre" */
-.projeto {
-    color: #EF3B60; 
-}
-
-.titulo {
-    float: left;
-    color:black;
-    margin-top: 10px;
-    font-size: 46px;
-}
-.resto {
-    padding-top: 0px;
-    margin: 0px;
-    height: 650px;
-}
-.resto-menor {
-    margin: 0 auto;
-    width: 80%;
-    color: #232323;
-    min-height: 640px;
-
-}
-.caixa1{
-    width: 47%;
-    background-color: #ffffff;
-    min-height: 360px;
-   
-    border-bottom:  #67360E 4px solid;
-    float: right;
-}
-.h3-livros{
-    padding-left: 40%;
-    padding-top: 0px;
-    font-size: 20px;
-}
-.div-livros{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.caixa2{
-    background-color: #ffffff;
-    min-height: 360px;
-    width: 47%;
-    border-bottom: #67360E 4px solid;
-}
-
-.h3-autores{
-    padding-left: 40%;
-    padding-top: 24px;
-    font-size: 20px;
-}
-
-.div-autores{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.caixa3{
-    margin-top: 30px;
-    background-color: #ffffff;
-    min-height: 170px;
-    width: 100%;
-    border-bottom: #67360E 4px solid;
-}
-
-.h3-contato{
-    padding-left: 45.5%;
-    padding-top: 24px;
-    font-size: 25px;
-}
-
-.div-contato{
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 20px;
 }
 

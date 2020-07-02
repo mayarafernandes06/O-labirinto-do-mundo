@@ -19,6 +19,7 @@ body {
     background: linear-gradient(298deg, rgba(255,112,122,1) 12%, rgba(255,182,146,1) 43%, rgba(255,237,160,1) 100%);
 }
 
+/*Fontes usadas no site*/
 
 @font-face {
     font-family: Alcubierre;
@@ -30,18 +31,22 @@ body {
     
 }
 
+/*Configurações do site*/
+
 .site {
     margin: 0;
     padding: 0;
 }
 
 .corpo_filme {
-    background: url(../img/mountains_filme.png) fixed no-repeat;
+    background: url(../img/background/mountains_filme.png) fixed no-repeat;
     background-size: 100% auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/*Configurações da caixa_filme e o conteúdo dentro dela*/
 
 .caixa_filme {
     display: flex;
@@ -49,6 +54,7 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+
 #caixa_do_h1 {
     display: flex;
     justify-content: center;
@@ -101,6 +107,8 @@ body {
     
 }
 
+/*Imagens estilizadas usadas na página filme*/
+
 .imagens_filme {
     height: 84px;
     margin-bottom: 24px; 
@@ -115,12 +123,16 @@ body {
     align-items: center;
 }
 
+/*Ajustes feitos para colocar o trailer*/
+
 #trailer {
     justify-content: center;
     align-items: center;
     display: flex;
     margin-bottom: 20px;
 }
+
+/*Configurações da caixa_dos_atores e caixa_atores*/
 
 .caixa_dos_atores {
     display: flex;
@@ -152,6 +164,10 @@ body {
 .caixa_atores a:hover {
     transform: scale(1.2);
 }
+
+/*Imagens usadas para o elenco*/
+
+/* Atores de Quem é você, Alasca? */
 
 .atores_charlie {
     background: url(../img/atores/charlie.jpg) no-repeat;
@@ -205,8 +221,6 @@ body {
     
 }
 
-/*Fim dos atores de Deixe a Neve Cair */
-
 /* Atores de Cidades de Papel */
 
 .atores_nat {
@@ -238,8 +252,6 @@ body {
     background: url(../img/atores/austin.jpg) no-repeat;
     
 }
-
-/*Fim dos atores de Cidades de Papel */
 
 /* Atores de A culpa é das estrelas */
 
@@ -273,7 +285,7 @@ body {
     
 }
 
-/*Fim dos atores de A culpa é das estrelas */
+/*Configurações usadas para fazer a descrição da série/filmes*/
 
 .descricao p {
     display: flex;
